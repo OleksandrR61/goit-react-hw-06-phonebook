@@ -10,8 +10,8 @@ export const ContactElement = ({contact}) => {
     const dispatch = useDispatch();
 
     const handleClick = () => {
-        dispatch(deleteContact(contact.name));
         Notify.success(`Contact ${contact.name} removed`);
+        dispatch(deleteContact(contact.name));
     };
 
     return (
