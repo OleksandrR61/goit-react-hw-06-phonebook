@@ -34,6 +34,7 @@ export const ContactForm = () => {
         if (contacts.every(contact =>
             contact.name !== name)) {
                 dispatch(addContact({name, number}));
+                Notify.success(`Contact ${name} created`);
         } else {
             Notify.info(`${name} is already in contacts.`)
         }
