@@ -1,5 +1,6 @@
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 import { deleteContact } from 'redux/contactsSlice';
 
