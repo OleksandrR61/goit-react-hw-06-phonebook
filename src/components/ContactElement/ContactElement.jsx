@@ -11,7 +11,7 @@ export const ContactElement = ({contact}) => {
 
     const handleClick = () => {
         dispatch(deleteContact(contact.name));
-        Notify.success(`Contact ${name} removed`);
+        Notify.success(`Contact ${contact.name} removed`);
     };
 
     return (
